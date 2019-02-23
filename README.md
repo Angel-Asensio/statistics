@@ -1,9 +1,11 @@
-Code​ ​Challenge
+Code Challenge
 We would like to have a restful API for our statistics. The main use case for our API is to
 calculate realtime statistic from the last 60 seconds. There will be two APIs, one of them is
 called every time a transaction is made. It is also the sole input of this rest API. The other one
 returns the statistic based of the transactions of the last 60 seconds.
+
 Specs
+
 POST /transactions
 
 Every Time a new transaction happened, this endpoint will be called.
@@ -23,7 +25,8 @@ Returns: Empty body with either 201 or 204.
 Where:
 ● amount is a double specifying the amount
 ● time is a long specifying unix time format in milliseconds
-GET​ ​/statistics
+
+GET /statistics
 This is the main endpoint of this task, this endpoint have to execute in constant time and
 memory (O(1)). It returns the statistic based on the transactions which happened in the last 60
 seconds.
@@ -62,7 +65,7 @@ we could receive a transaction which have a timestamp of the past
 ● Make sure to send the case in memory solution without database (including in-memory
 database)
 ● Endpoints have to execute in constant time and memory (O(1))
-● Please​ ​complete​ ​the​ ​challenge​ ​using​ ​Java
+● Please complete the challenge using Java
 
 ## build
 mvn clean install
