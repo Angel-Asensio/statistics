@@ -1,0 +1,13 @@
+*.DS_Store
+.AppleDouble
+.LSOverride
+classpath
+
+.checkstyle
+.project
+.settings/
+.springBeans
+/logs/
+*.iml
+/target
+/.idea
